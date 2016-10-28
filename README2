@@ -51,3 +51,11 @@ git clone https://github.com/sebasz1000/clase-de-github.git (ruta del repositori
 //subir los archivos locales a la repo en la nube
 
 	git push origin master
+
+//crear ramas
+
+	git branch dev
+
+//cambiar de ramas
+
+	git checkout dev
