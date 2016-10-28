@@ -1,0 +1,48 @@
+//configurando variables de globales de git 
+
+	git config —-global user.name
+	git config —-global user.email
+
+//generar shh key
+
+	ssh-keygen
+
+//acceder al keygen para copiarlo
+
+	cat /Users/tic/.ssh/id_rsa.pub
+
+//iniciar un repositorio git, ubicándonos en la carpeta raíz de nuestro proyecto
+
+	git init
+
+//añadiendo un readme o un carpeta para llenar el proyecto
+
+	touch README
+	mkdir CarpetaVacia
+
+//añadir los elementos creados al repositorio on stage
+
+	git add . (añade todos los archivos creados)
+
+	git add README
+	git add CarpetaVacia
+
+//crear el “commit” para mostrar cambio en el repositorio
+
+	git commit -m “creación de un readme y una carpeta vacía”
+
+//averiguar el estado de mi repositorio
+
+	git status
+
+//conectando el repositorio en la nube con mi repositorio local
+
+	git remote add origin https://github.com/sebasz1000/clase-de-github.git (ruta del repositorio de github)
+
+//traer los archivos en la repo de la nube a mi repo local para actualizarlo
+
+	git pull origin master
+
+//subir los archivos locales a la repo en la nube
+
+	git push origin master
